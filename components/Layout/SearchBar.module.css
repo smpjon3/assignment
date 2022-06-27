@@ -1,0 +1,24 @@
+.container {
+  @apply flex items-center gap-x-1.5 pr-[5px] w-[323px] h-[44px] rounded-xl;
+  background-color: rgba(236, 236, 244, 0.5);
+}
+
+.input {
+  @apply w-full h-full pl-[13px] py-1 font-sans font-normal text-sm text-grayscale-900 bg-transparent caret-primary border-none;
+}
+
+.input[type="search"] {
+  outline: none;
+  outline-offset: 0;
+}
+
+.input::placeholder {
+  @apply text-gray-2;
+}
+
+.input::-webkit-search-decoration,
+.input::-webkit-search-cancel-button,
+.input::-webkit-search-results-button,
+.input::-webkit-search-results-decoration {
+  display: none;
+}

@@ -1,0 +1,18 @@
+.activeIndicator {
+}
+
+.activeIndicator:global.enter,
+.activeIndicator:global.exit-done {
+  opacity: 0;
+}
+
+.activeIndicator:global.exit,
+.activeIndicator:global.enter-active,
+.activeIndicator:global.enter-done {
+  opacity: 1;
+}
+
+.activeIndicator:global.exit-active {
+  opacity: 0;
+  transition-duration: 150ms;
+}
